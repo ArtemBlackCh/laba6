@@ -1,0 +1,48 @@
+<section class="flex">
+  <div class="content">
+    <h2>Завдання</h2>
+    <p>
+      Базовий клас: Квадрат (поле - назва, сторона)
+      <br />
+      Метод: Площа квадрата.
+      <br />
+      Нащадок: Прямокутник (поле - різниця між довжинами сторін)
+      <br />
+      Зміни в нащадках: Змінити обчислення площі фігури.
+    </p>
+  </div>
+</section>
+
+<section class="flex">
+  <div class="flex flex-row">
+    <fieldset class="flex flex-column">
+      <legend>Квадрат</legend>
+      <input type="text" value="Квадрат" placeholder="Назва" #name1 />
+      <input type="number" value="5" min="0" step="any" placeholder="Сторона" #side1 />
+      <button class="btn" (click)="calcSquare(name1.value, side1.value)">
+        Розрахунок
+      </button>
+    </fieldset>
+
+    <fieldset class="flex flex-column">
+      <legend>Прямокутник</legend>
+      <input type="text" value="Прямокутник" placeholder="Назва" #name2 />
+      <input type="number" value="5" min="0" step="any" placeholder="Сторона" #side2 />
+      <input type="number" value="2" min="0" step="any" placeholder="Різниця сторін" #diff2 />
+      <button
+        class="btn"
+        (click)="calcRectangle(name2.value, side2.value, diff2.value)"
+      >
+        Розрахунок
+      </button>
+    </fieldset>
+  </div>
+</section>
+
+<section class="flex">
+  <h2 class="gradient-text">Результати обрахунків</h2>
+  <h3 class="gradient-text">Квадрат</h3>
+  <h4>{{ squareShow() }}</h4>
+  <h3 class="gradient-text">Прямокутник</h3>
+  <h4>{{ rectangleShow() }}</h4>
+</section>
