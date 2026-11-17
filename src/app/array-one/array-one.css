@@ -1,0 +1,45 @@
+.content {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 20px;
+  max-width: 800px;
+}
+
+fieldset {
+  border: 1px solid #aaa;
+  padding: 15px;
+  margin: 10px;
+}
+
+input {
+  padding: 6px;
+  margin: 6px 0 6px 10px;
+  background: transparent;
+  color: white;
+  border: none;
+  border-bottom: 2px solid #888;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 8px 20px;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(135deg, #6a9e3f, #3a8fa8);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+h4 {
+  max-width: 800px;
+  word-break: break-word;
+}
+
+.error {
+  color: #ff8a8a;
+}
